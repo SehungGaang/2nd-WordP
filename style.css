@@ -1,0 +1,244 @@
+/*
+Theme Name: My First WP Website
+Author: CodingDIY
+Author URI: https://www.inflearn.com/users/@codingdiy
+Version: 1.0
+Text Domain: MyFirstWordP
+*/
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, small, strong, ol, ul, li, article, aside footer, header, section {
+    margin: 0 ;
+    padding: 0 ;
+    border:0 ;    
+}
+
+body {
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.section-content {
+    padding: 4rem 0;
+}
+
+.section-header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+}
+
+/* Pagination */
+
+.pagination {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.pagination a{
+    text-decoration: none;
+    border: 1px solid #ddd;
+    padding: 0.25rem 0.5rem;
+}
+
+.pagination a.prev,
+.pagination a.next {
+    text-decoration: none;
+    border: none;
+}
+
+.pagination .current {
+    font-weight: bold;
+    border: 1px solid blue;
+    padding: 0.25rem 0.5rem;
+    background-color: blue;
+    color: white;
+}
+
+/* Post header styles */
+
+.post-header h4{
+    font-size: 1.5rem;
+}
+
+.post-header h4 a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-meta {
+    border-top: 1px solid #ddd ;
+    border-bottom: 1px solid #ddd ;
+    margin-top: 0.5rem;
+    padding-bottom: 0.25rem;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+}
+
+.post-meta>*:not(.avatar) {
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+}
+
+.post-meta .avatar {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.post-meta .post-author a {
+    text-decoration: none;
+}
+
+.post-meta .post-categories {
+    list-style: none;
+    display: inline-block;
+}
+
+.post-categories a {
+    text-decoration: none;
+}
+
+a[rel='tag'],
+a[rel='prev'],
+a[rel='next'] {
+    text-decoration: none;
+}
+
+/* blog styles */
+
+.blog main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.blog #post {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 1rem;
+}
+
+.blog #post .post-header {
+    grid-column: 1/-1;
+}
+
+
+.blog #post .post-body {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 1rem;
+}
+
+.blog .post-featured-image {
+    grid-column: 1/2;
+    width: 180px;
+    border-radius: 6px;
+}
+
+.blog .post-text-with-featured {
+    grid-column: 2/-1;
+}
+
+.blog .post-text-without-featured {
+    grid-column: 1/-1;
+}
+
+/* post styles */
+
+.to-home {
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.single #post {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    border-radius: 8px;
+}
+
+.single #post .post-header {
+    margin-bottom: 1rem;
+}
+
+.single .post-featured {
+    display: flex;
+    justify-content: center;
+}
+
+.single .post-featured-image {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+/* Archive Page */
+
+.archive main {
+    display: block;
+}
+
+.archive #post {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 1rem;
+}
+
+.archive #post .post-header {
+    grid-column: 1/-1;
+}
+
+.archive #post .post-body {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.archive #post .post-featured-image {
+    grid-column: 1/2;
+    width: 180px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+}
+
+.archive #post .post-text-with-featured {
+    grid-column: 2/-1;
+}
+
+.archive #post .post-text-without-featured {
+    grid-column: 1/-1;
+}
